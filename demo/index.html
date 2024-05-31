@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ML5 Pose Yoga</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- use 640x360 for 16:9 camera, and 640x480 for a 4:3 camera 1080 x 1920.-->
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <video id="video" width="640" height="480" style="display:none"></video>
+    <div id="message">Loading...</div>
+    <p id="namePose">Pose Name...</p>
+    <p id="acc">Accuracy....</p>
+
+    <div><textarea id="numbers"></textarea></div> 
+    <div id="timer">
+    </div>
+    <audio 
+        controls autoplay 
+        src="./countdown.mp3" id="audio" muted> 
+            Your browser does not support the 
+            <code>audio</code> element. 
+    </audio> 
+    <button onclick="nextPose()">next</button>
+    <div></div>  
+    
+</body>
+
+</html>
